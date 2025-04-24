@@ -1,8 +1,8 @@
 === GDPR Data Request Form ===
 Contributors: audrasjb,whodunitagency,xkon
-Tags: GDPR, RGPD, Gutenberg, block, privacy, form, data request, export, personal data
+Tags: GDPR, privacy, export, personal data request
 Requires at least: 4.9.6
-Tested up to: 6.4
+Tested up to: 6.8
 Requires PHP: 5.6
 Stable tag: 1.7
 License: GPLv2 or later
