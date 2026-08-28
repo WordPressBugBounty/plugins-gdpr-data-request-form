@@ -14,7 +14,7 @@ function gdrf_filter_dpo_email( $admin_email ) {
 	if ( isset( $gdrf_dpo_email ) && ! empty( $gdrf_dpo_email ) ) {
 		$admin_email = sanitize_email( $gdrf_dpo_email );
 	}
-	return $admin_email;
+	return esc_html( $admin_email );
 }
 add_filter( 'user_request_confirmed_email_to', 'gdrf_filter_dpo_email', 10, 1 );
 
@@ -41,10 +41,10 @@ function gdrf_enqueue_admin_script( $hook ) {
 	wp_enqueue_script( 'gdrf-admin', plugin_dir_url( __FILE__ ) . 'js/gdrf-admin.js', array( 'jquery' ) );
 
 	$translation_array = array(
-		'section_title'     => __( 'Data Protection Officer (DPO) email', 'gdpr-data-request-form' ),
-		'input_label'       => __( 'Send data requests notifications to this email', 'gdpr-data-request-form' ),
-		'input_value'       => $dpo_email,
-		'save_button_label' => __( 'Save changes', 'gdpr-data-request-form' ),
+		'section_title'     => esc_html__( 'Data Protection Officer (DPO) email', 'gdpr-data-request-form' ),
+		'input_label'       => esc_html__( 'Send data requests notifications to this email', 'gdpr-data-request-form' ),
+		'input_value'       => esc_html( $dpo_email ),
+		'save_button_label' => esc_html__( 'Save changes', 'gdpr-data-request-form' ),
 	);
 
 	wp_localize_script( 'gdrf-admin', 'gdrf_settings', $translation_array );

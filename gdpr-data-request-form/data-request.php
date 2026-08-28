@@ -13,7 +13,7 @@
 function gdrf_data_request() {
 	$gdrf_error     = array();
 	$gdrf_type      = esc_html( filter_input( INPUT_POST, 'gdrf_data_type', FILTER_SANITIZE_STRING ) );
-	$gdrf_email     = sanitize_email( $_POST['gdrf_data_email'] );
+	$gdrf_email     = esc_html( sanitize_email( $_POST['gdrf_data_email'] ) );
 	$gdrf_human     = absint( filter_input( INPUT_POST, 'gdrf_data_human', FILTER_SANITIZE_NUMBER_INT ) );
 	$gdrf_human_key = esc_html( filter_input( INPUT_POST, 'gdrf_data_human_key', FILTER_SANITIZE_STRING ) );
 	$gdrf_numbers   = explode( '000', $gdrf_human_key );

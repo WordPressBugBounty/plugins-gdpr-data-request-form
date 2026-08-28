@@ -2,9 +2,9 @@
 Contributors: audrasjb,whodunitagency,xkon
 Tags: GDPR, privacy, export, personal data request
 Requires at least: 4.9.6
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 1.7
+Stable tag: 1.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -134,6 +134,9 @@ Lovely contributors: [@audrasjb (plugin author)](https://profiles.wordpress.org/
 9. Personal Data Export as received by the user/visitor.
 
 == Changelog ==
+
+= 1.7.1 =
+- WP 7.1 suppport + small security enhancement.
 
 = 1.7 =
 - Security: Fixes a security issue discovered by Ngô Thiên An and responsively escalated by the Patchstack team. Thanks!
